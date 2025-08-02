@@ -1,0 +1,49 @@
+body
+{
+    background-image: url("paisagem.jpg");
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+#relogio 
+{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    background-color: rgba(112, 5, 173, 0.6);
+    border-radius: 10px;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.74);
+    user-select: none;
+    padding: 8px;
+    width: 70%;
+    max-width: 500px;
+    min-width: 200px;
+
+    cursor: pointer;
+    transition: transform 0.2s linear;
+}
+
+#relogio:active{
+    background-color: rgba(89, 7, 136, 0.6);;
+}
+
+#relogio:hover
+{
+    transform: scale(1.2, 1.2);
+}
